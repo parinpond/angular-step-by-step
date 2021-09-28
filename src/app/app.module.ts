@@ -7,7 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProductComponent } from './product/product.component';
-
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +18,13 @@ import { ProductComponent } from './product/product.component';
     ProductComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      {path:'',component:HomeComponent},
+      {path:'about',component:AboutComponent},
+      {path:'contact',component:ContactComponent},
+      {path:'product',component:ProductComponent},
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]
