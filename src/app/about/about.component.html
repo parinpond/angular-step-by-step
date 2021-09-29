@@ -1,1 +1,7 @@
-<p>about works!</p>
+<form>
+    <label for="">Name</label>
+    <input type="text" name="fullName" [(ngModel)]="fullName" (keyup)="myKeyUp()"/>
+    <button (click)="doSave()">Save</button>
+</form>
+{{fullName}}
+<div>{{age|number}}</div>

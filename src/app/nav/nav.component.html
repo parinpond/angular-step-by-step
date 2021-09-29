@@ -8,13 +8,13 @@
                 <a class="nav-link" routerLink="">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="contact">Contact</a>
+                <a class="nav-link" href="contact">{{labelContact}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="about">About</a>
+                <a class="nav-link" href="about">{{labelAbout}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="product">Product</a>
+                <a class="nav-link" href="product">{{labelProduct}}</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
@@ -27,10 +27,6 @@
                 </div>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
     </div>
 </nav>
 <div id="carouselId" class="carousel slide" data-ride="carousel">
@@ -59,3 +55,5 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
+<div>Name={{employee.name}}</div>
+<div>Age={{employee.age}}</div>

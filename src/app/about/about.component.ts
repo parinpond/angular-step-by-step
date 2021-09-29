@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-
+  fullName:string="";
+  age:number=30;
   constructor() { }
 
   ngOnInit(): void {
+  }
+  myKeyUp(){
+    console.log(this.fullName.length);
+  }
+  doSave(){
+    console.log("Hello");
   }
 
 }
